@@ -94,8 +94,8 @@ importers:
         specifier: ~8.0.1
         version: 8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0)
       '@angular/compiler':
-        specifier: ~8.0.1
-        version: 8.0.3
+        specifier: ~21.2.11
+        version: 21.2.11
       '@angular/core':
         specifier: ~8.0.1
         version: 8.0.3(rxjs@6.4.0)(zone.js@0.9.1)
@@ -107,7 +107,7 @@ importers:
         version: 8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))
       '@angular/platform-browser-dynamic':
         specifier: ~8.0.1
-        version: 8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/compiler@8.0.3)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(@angular/platform-browser@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1)))
+        version: 8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/compiler@21.2.11)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(@angular/platform-browser@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1)))
       '@angular/router':
         specifier: ~8.0.1
         version: 8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(@angular/platform-browser@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1)))(rxjs@6.4.0)
@@ -123,13 +123,13 @@ importers:
     devDependencies:
       '@angular-devkit/build-angular':
         specifier: ~0.800.0
-        version: 0.800.6(@angular/compiler-cli@8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5))(typescript@3.4.5)
+        version: 0.800.6(@angular/compiler-cli@8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5))(typescript@3.4.5)
       '@angular/cli':
         specifier: ~8.0.4
         version: 8.0.6
       '@angular/compiler-cli':
         specifier: ~8.0.1
-        version: 8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5)
+        version: 8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5)
       '@angular/language-service':
         specifier: ~8.0.1
         version: 8.0.3
@@ -144,7 +144,7 @@ importers:
         version: 8.9.5
       codelyzer:
         specifier: ^5.0.0
-        version: 5.2.2(@angular/compiler@8.0.3)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(tslint@5.15.0(typescript@3.4.5))
+        version: 5.2.2(@angular/compiler@21.2.11)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(tslint@5.15.0(typescript@3.4.5))
       jasmine-core:
         specifier: ~3.4.0
         version: 3.4.0
@@ -286,8 +286,9 @@ packages:
       '@angular/compiler': 8.0.3
       typescript: '>=3.4 <3.5'
 
-  '@angular/compiler@8.0.3':
-    resolution: {integrity: sha512-1/vF8D6l1O6IfWiDtaj6nC+B8CtkVtFgXgooDzLBO6XAkaCuJCnhKT1HnpWG5GtVsGaY9MGoTl1vE9ZMDbRQjg==}
+  '@angular/compiler@21.2.11':
+    resolution: {integrity: sha512-/KdE0kPQr24K/aNsdIDS2or555+8CrQxyRB5MxPKy3/8d6EvilEY/UN7pB7A5xgRQtUPMea08ZzLFJVp1qNbDA==}
+    engines: {node: ^20.19.0 || ^22.12.0 || >=24.0.0}
 
   '@angular/core@8.0.3':
     resolution: {integrity: sha512-IIxrtIPNuv2+HudER9J1nmPGiGJ4aRpeiFM9V4lSiSFv50RzuaoG60XqYIpUyuBdgvyKigcrfSbu9+x1vyN0hw==}
@@ -6630,6 +6631,10 @@ packages:
     resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
     engines: {node: ^10 || ^12 || >=14}
 
+  postcss@8.5.12:
+    resolution: {integrity: sha512-W62t/Se6rA0Az3DfCL0AqJwXuKwBeYg6nOaIgzP+xZ7N5BFCI7DYi1qs6ygUYT6rvfi6t9k65UMLJC+PHZpDAA==}
+    engines: {node: ^10 || ^12 || >=14}
+
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
@@ -8074,7 +8079,7 @@ packages:
 
   uuid@3.4.0:
     resolution: {integrity: sha512-HjSDRw6gZE5JMggctHBcjVak08+KEVhSIiDzFnT9S9aegmp85S/bReBVTb4QTFaRNptJ9kuYaNhnbNEOkbKb/A==}
-    deprecated: Please upgrade  to version 7 or higher.  Older versions may use Math.random() in certain circumstances, which is known to be problematic.  See https://v8.dev/blog/math-random for details.
+    deprecated: uuid@10 and below is no longer supported.  For ESM codebases, update to uuid@latest.  For CommonJS codebases, use uuid@11 (but be aware this version will likely be deprecated in 2028).
     hasBin: true
 
   v8-compile-cache-lib@3.0.1:
@@ -8514,14 +8519,14 @@ snapshots:
       '@angular-devkit/core': 8.0.6
       rxjs: 6.4.0
 
-  '@angular-devkit/build-angular@0.800.6(@angular/compiler-cli@8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5))(typescript@3.4.5)':
+  '@angular-devkit/build-angular@0.800.6(@angular/compiler-cli@8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5))(typescript@3.4.5)':
     dependencies:
       '@angular-devkit/architect': 0.800.6
       '@angular-devkit/build-optimizer': 0.800.6
       '@angular-devkit/build-webpack': 0.800.6(webpack-dev-server@3.3.1(webpack@4.30.0))(webpack@4.30.0)
       '@angular-devkit/core': 8.0.6
-      '@angular/compiler-cli': 8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5)
-      '@ngtools/webpack': 8.0.6(@angular/compiler-cli@8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5))(typescript@3.4.5)(webpack@4.30.0)
+      '@angular/compiler-cli': 8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5)
+      '@ngtools/webpack': 8.0.6(@angular/compiler-cli@8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5))(typescript@3.4.5)(webpack@4.30.0)
       ajv: 6.10.0
       autoprefixer: 9.5.1
       browserslist: 4.5.5
@@ -8634,9 +8639,9 @@ snapshots:
       rxjs: 6.4.0
       tslib: 1.14.1
 
-  '@angular/compiler-cli@8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5)':
+  '@angular/compiler-cli@8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5)':
     dependencies:
-      '@angular/compiler': 8.0.3
+      '@angular/compiler': 21.2.11
       canonical-path: 1.0.0
       chokidar: 2.1.8(supports-color@6.1.0)
       convert-source-map: 1.9.0
@@ -8652,9 +8657,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@angular/compiler@8.0.3':
+  '@angular/compiler@21.2.11':
     dependencies:
-      tslib: 1.14.1
+      tslib: 2.8.1
 
   '@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1)':
     dependencies:
@@ -8672,10 +8677,10 @@ snapshots:
 
   '@angular/language-service@8.0.3': {}
 
-  '@angular/platform-browser-dynamic@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/compiler@8.0.3)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(@angular/platform-browser@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1)))':
+  '@angular/platform-browser-dynamic@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/compiler@21.2.11)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(@angular/platform-browser@8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1)))':
     dependencies:
       '@angular/common': 8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0)
-      '@angular/compiler': 8.0.3
+      '@angular/compiler': 21.2.11
       '@angular/core': 8.0.3(rxjs@6.4.0)(zone.js@0.9.1)
       '@angular/platform-browser': 8.0.3(@angular/common@8.0.3(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(rxjs@6.4.0))(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))
       tslib: 1.14.1
@@ -9473,10 +9478,10 @@ snapshots:
   '@next/swc-win32-x64-msvc@16.2.1':
     optional: true
 
-  '@ngtools/webpack@8.0.6(@angular/compiler-cli@8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5))(typescript@3.4.5)(webpack@4.30.0)':
+  '@ngtools/webpack@8.0.6(@angular/compiler-cli@8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5))(typescript@3.4.5)(webpack@4.30.0)':
     dependencies:
       '@angular-devkit/core': 8.0.6
-      '@angular/compiler-cli': 8.0.3(@angular/compiler@8.0.3)(typescript@3.4.5)
+      '@angular/compiler-cli': 8.0.3(@angular/compiler@21.2.11)(typescript@3.4.5)
       enhanced-resolve: 4.1.0
       rxjs: 6.4.0
       tree-kill: 1.2.1
@@ -10728,7 +10733,7 @@ snapshots:
       '@vue/shared': 3.5.33
       estree-walker: 2.0.2
       magic-string: 0.30.21
-      postcss: 8.5.10
+      postcss: 8.5.12
       source-map-js: 1.2.1
 
   '@vue/compiler-ssr@3.5.33':
@@ -11693,9 +11698,9 @@ snapshots:
 
   code-point-at@1.1.0: {}
 
-  codelyzer@5.2.2(@angular/compiler@8.0.3)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(tslint@5.15.0(typescript@3.4.5)):
+  codelyzer@5.2.2(@angular/compiler@21.2.11)(@angular/core@8.0.3(rxjs@6.4.0)(zone.js@0.9.1))(tslint@5.15.0(typescript@3.4.5)):
     dependencies:
-      '@angular/compiler': 8.0.3
+      '@angular/compiler': 21.2.11
       '@angular/core': 8.0.3(rxjs@6.4.0)(zone.js@0.9.1)
       app-root-path: 2.2.1
       aria-query: 3.0.0
@@ -12621,7 +12626,7 @@ snapshots:
       '@next/eslint-plugin-next': 16.2.1
       eslint: 9.34.0(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.34.0(jiti@2.6.1)))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.34.0(jiti@2.6.1)))(eslint@9.34.0(jiti@2.6.1))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.34.0(jiti@2.6.1)))(eslint-plugin-import@2.32.0)(eslint@9.34.0(jiti@2.6.1))
       eslint-plugin-import: 2.32.0(@typescript-eslint/parser@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-typescript@3.10.1)(eslint@9.34.0(jiti@2.6.1))
       eslint-plugin-jsx-a11y: 6.10.2(eslint@9.34.0(jiti@2.6.1))
       eslint-plugin-react: 7.37.5(eslint@9.34.0(jiti@2.6.1))
@@ -12655,7 +12660,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.34.0(jiti@2.6.1)))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.34.0(jiti@2.6.1)))(eslint@9.34.0(jiti@2.6.1)):
+  eslint-import-resolver-typescript@3.10.1(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.34.0(jiti@2.6.1)))(eslint-plugin-import@2.32.0)(eslint@9.34.0(jiti@2.6.1)):
     dependencies:
       '@nolyfill/is-core-module': 1.0.39
       debug: 4.4.3(supports-color@6.1.0)
@@ -12688,7 +12693,7 @@ snapshots:
       '@typescript-eslint/parser': 8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3)
       eslint: 9.34.0(jiti@2.6.1)
       eslint-import-resolver-node: 0.3.10
-      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.34.0(jiti@2.6.1)))(eslint-plugin-import@2.32.0(@typescript-eslint/parser@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint@9.34.0(jiti@2.6.1)))(eslint@9.34.0(jiti@2.6.1))
+      eslint-import-resolver-typescript: 3.10.1(eslint-plugin-import-x@4.16.2(@typescript-eslint/utils@8.59.0(eslint@9.34.0(jiti@2.6.1))(typescript@5.9.3))(eslint-import-resolver-node@0.3.10)(eslint@9.34.0(jiti@2.6.1)))(eslint-plugin-import@2.32.0)(eslint@9.34.0(jiti@2.6.1))
     transitivePeerDependencies:
       - supports-color
 
@@ -15921,6 +15926,12 @@ snapshots:
       source-map-js: 1.2.1
 
   postcss@8.5.10:
+    dependencies:
+      nanoid: 3.3.11
+      picocolors: 1.1.1
+      source-map-js: 1.2.1
+
+  postcss@8.5.12:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
